@@ -19,3 +19,5 @@ media/
 
 # macOS
 .DS_Store
+
+staticfiles/
