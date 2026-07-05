@@ -8,6 +8,7 @@ python manage.py collectstatic --noinput
 
 python manage.py shell << END
 from django.contrib.auth import get_user_model
+
 User = get_user_model()
 
 if not User.objects.filter(username="varun").exists():
@@ -16,4 +17,7 @@ if not User.objects.filter(username="varun").exists():
         "varun.k.a.1005@gmail.com",
         "Varun51130"
     )
+    print("Superuser created successfully.")
+else:
+    print("Superuser already exists.")
 END
