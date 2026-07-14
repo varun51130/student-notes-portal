@@ -12,7 +12,7 @@
 
     <h1 class="mb-4">Upload Note</h1>
 
-    <form method="POST" enctype="multipart/form-data">
+    <form method="POST">
 
         {% csrf_token %}
 
@@ -40,7 +40,7 @@
             <label>PDF File</label>
             <input type="file" name="pdf" class="form-control">    
         </div>
-
+        
         <button type="submit" class="btn btn-primary">
             Upload Note
         </button>
